@@ -1,0 +1,20 @@
+body {
+	background-color: #0071BA;
+	font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+#frame {
+	width: 500px;
+	height: 500px;
+	background-color: white;
+	margin: auto;
+	border-radius: 10px;
+}
+
+#heading {
+	text-align: center;
+	padding: 10px 10px;
+	font-size: 40px;
+	margin: 0px;
+}
