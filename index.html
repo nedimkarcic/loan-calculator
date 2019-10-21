@@ -4,30 +4,56 @@
 	<title>Loan Calculator</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/9478a8e71d.js" crossorigin="anonymous"></script></head>
 <body>
-	<div id="frame">
-		<h2 id="heading">Loan Calculator</h2>
+
+	<div id="frame1">
+		<h2 class="heading">Loan Calculator</h2>
 
 		<form>
 			<div class="input-container">
 				<i class="fas fa-euro-sign icon"></i>
-				<input type="number" name="number" class="input">
+				<input type="number" name="number" class="input" placeholder="Loan Amount">
 			</div>
 
 			<div class="input-container">
 				<i class="fas fa-percent icon"></i>
-				<input type="number" name="number" class="input">
+				<input type="number" name="number" class="input" placeholder="Interest">
 			</div>
 
 			<div class="input-container">
 				<i class="far fa-calendar icon"></i>
-				<input type="number" name="number" class="input">
+				<input type="number" name="number" class="input" placeholder="Years To Repay">
 			</div>
 		</form>
+
+		<button type="button" class="btn btn-primary" id="btn-center">Calculate</button>
+
 	</div>
+
+
+	<div id="frame2">
+		<h2 class="heading"> Results </h2>
+
+		
+			<div class="results-container">
+				<div class="results"><span class="result-tabs">Monthly Payment</span> <span class="result-number"> 90000</span> </div>
+			</div>
+
+			<div class="results-container">
+				<div class="results"><span class="result-tabs">Total Payment</span> <span class="result-number"></span> </div>
+			</div>
+
+			<div class="results-container">
+				<div class="results"><span class="result-tabs">Total Interest</span> <span class="result-number"></span> </div>
+			</div>
+		
+	</div>
+
+	<div class="loader" id="loader">Loading...</div>
 
 
 </body>

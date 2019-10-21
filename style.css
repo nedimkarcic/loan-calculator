@@ -5,15 +5,38 @@ body {
 
 }
 
-#frame {
+#frame1 {
 	width: 500px;
-	height: 500px;
+	height: 290px;
 	background-color: white;
 	margin: auto;
 	border-radius: 10px;
 }
 
-#heading {
+.btn {
+	background-color: #02aef0;
+	width: 80%;
+	border: none;
+}
+
+#btn-center{
+	display: block;
+	margin: 0 auto;
+}
+
+#btn-center:hover {
+	background-color: #0071BA;
+}
+
+#frame2 {
+	width: 500px;
+	height: 275px;
+	background-color: white;
+	margin: auto;
+	border-radius: 10px;
+}
+
+.heading {
 	text-align: center;
 	padding: 10px 10px;
 	font-size: 40px;
@@ -49,6 +72,43 @@ body {
   margin-bottom: 15px;	
 }
 
+.results-container{
+  display: flex;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 15px;
+  
+ }
+
+.results{
+  width: 100%;
+  outline: none;
+  height: 35px;
+  border: 1px solid grey;
+/*  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;*/
+  border-radius: 8px;
+  background-color: #02aef0;
+  color: white;
+  padding: 5px 5px 5px 5px;
+}
+
+.result-tabs {
+	padding-right: 10px;
+	padding-left: 15px;
+	border-right: 1px solid white;
+	float: left;
+	width: 40%;
+}
+
+.result-number {
+	float: left;
+	width: 30%;
+	padding-left: 15px;
+	font-weight: bold;
+
+}
+
 .icon {
   padding-top: 10px;
   background: #02aef0;
@@ -58,4 +118,66 @@ body {
   max-height: 35px;
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
+}
+
+.loader,
+.loader:before,
+.loader:after {
+  border-radius: 50%;
+  width: 2.5em;
+  height: 2.5em;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation: load7 1.8s infinite ease-in-out;
+  animation: load7 1.8s infinite ease-in-out;
+}
+.loader {
+  color: #ffffff;
+  font-size: 10px;
+  margin: 80px auto;
+  position: relative;
+  text-indent: -9999em;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+.loader:before,
+.loader:after {
+  content: '';
+  position: absolute;
+  top: 0;
+}
+.loader:before {
+  left: -3.5em;
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+.loader:after {
+  left: 3.5em;
+}
+@-webkit-keyframes load7 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 2.5em 0 -1.3em;
+  }
+  40% {
+    box-shadow: 0 2.5em 0 0;
+  }
+}
+@keyframes load7 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 2.5em 0 -1.3em;
+  }
+  40% {
+    box-shadow: 0 2.5em 0 0;
+  }
+}
+
+#loader, #frame2 {
+	display: none;
 }
