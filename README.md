@@ -2,4 +2,4 @@
 
 Application for calculating a loan in the bank.
 
-I just started it...
+It's almost finished
