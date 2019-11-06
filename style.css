@@ -7,10 +7,11 @@ body {
 
 #frame1 {
 	width: 500px;
-	height: 290px;
+	max-height: 400px;
 	background-color: white;
 	margin: auto;
 	border-radius: 10px;
+	padding-bottom: 15px;
 }
 
 .btn {
@@ -26,6 +27,12 @@ body {
 
 #btn-center:hover {
 	background-color: #0071BA;
+}
+
+#alert{
+	width: 80%;
+	display: block;
+	margin: 0 auto;
 }
 
 #frame2 {
@@ -178,6 +185,6 @@ body {
   }
 }
 
-#loader, #frame2 {
+#loader, #frame2, #alert {
 	display: none;
 }

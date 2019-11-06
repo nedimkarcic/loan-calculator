@@ -11,50 +11,68 @@
 <body>
 
 	<div id="frame1">
+
 		<h2 class="heading">Loan Calculator</h2>
 
-		<form>
+		<form id="form">
 			<div class="input-container">
 				<i class="fas fa-euro-sign icon"></i>
-				<input type="number" name="number" class="input" placeholder="Loan Amount">
+				<input type="number" name="number" class="input" placeholder="Loan Amount" id="loan-amount">
 			</div>
 
 			<div class="input-container">
 				<i class="fas fa-percent icon"></i>
-				<input type="number" name="number" class="input" placeholder="Interest">
+				<input type="number" name="number" class="input" placeholder="EPM" id="interest">
 			</div>
 
 			<div class="input-container">
 				<i class="far fa-calendar icon"></i>
-				<input type="number" name="number" class="input" placeholder="Years To Repay">
+				<input type="number" name="number" class="input" placeholder="Years To Repay" id="years-to-repay">
 			</div>
+
+			<button type="submit" class="btn btn-primary" id="btn-center">Calculate</button>
+
 		</form>
 
-		<button type="button" class="btn btn-primary" id="btn-center">Calculate</button>
+		<div class="alert alert-danger" role="alert" id="error">
+  			A simple danger alert—check it out!
+		</div>
+
 
 	</div>
 
 
 	<div id="frame2">
+
 		<h2 class="heading"> Results </h2>
 
 		
 			<div class="results-container">
-				<div class="results"><span class="result-tabs">Monthly Payment</span> <span class="result-number"> 90000</span> </div>
+				<div class="results">
+					<span class="result-tabs">Monthly Payment</span>
+					<span class="result-number" id="monthly-payment"> 90000</span> 
+				</div>
 			</div>
 
 			<div class="results-container">
-				<div class="results"><span class="result-tabs">Total Payment</span> <span class="result-number"></span> </div>
+				<div class="results">
+					<span class="result-tabs">Total Payment</span>
+					<span class="result-number" id="total-payment"></span> 
+				</div>
 			</div>
 
 			<div class="results-container">
-				<div class="results"><span class="result-tabs">Total Interest</span> <span class="result-number"></span> </div>
+				<div class="results">
+					<span class="result-tabs">Total Interest</span>
+					<span class="result-number" id="total-interest"></span> 
+				</div>
 			</div>
 		
 	</div>
 
 	<div class="loader" id="loader">Loading...</div>
 
+    <script src="app.js"></script>
 
 </body>
 </html>
