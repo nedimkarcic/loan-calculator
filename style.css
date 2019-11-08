@@ -29,7 +29,7 @@ body {
 	background-color: #0071BA;
 }
 
-#alert{
+#error{
 	width: 80%;
 	display: block;
 	margin: 0 auto;
@@ -185,6 +185,6 @@ body {
   }
 }
 
-#loader, #frame2, #alert {
+#loader, #frame2, #error {
 	display: none;
 }
