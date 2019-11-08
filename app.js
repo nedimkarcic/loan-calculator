@@ -8,7 +8,7 @@ form.addEventListener('submit', function(e){
 
 	document.getElementById('loader').style.display = 'block';
 
-  	setTimeout(calculateResults, 2700);
+  	setTimeout(calculateResults, 2600);
 
   	e.preventDefault();
 });
@@ -34,9 +34,9 @@ const monthly = (principal*x*calculatedInterest)/(x-1);
 
 //The isFinite() function determines whether a number is a finite, legal number.
 if(isFinite(monthly)) {
-  monthlyPayment.value = monthly.toFixed(2);
-  totalPayment.value = (monthly * calculatedPayments).toFixed(2);
-  totalInterest.value = ((monthly * calculatedPayments)-principal).toFixed(2);
+  monthlyPayment.textContent = monthly.toFixed(2);
+  totalPayment.textContent = (monthly * calculatedPayments).toFixed(2);
+  totalInterest.textContent = ((monthly * calculatedPayments)-principal).toFixed(2);
 
 // Show results
 document.getElementById('frame2').style.display = 'block';
@@ -52,13 +52,25 @@ document.getElementById('frame1').style.borderBottomLeftRadius = '0px';
 document.getElementById('loader').style.display = 'none';
 
 } else {
-    showError('Please check your numbers');
+    showError();
  }
 
 };
 
-function showError(e){
+function showError(){
 	console.log('error');
 	//hide result and loader
+	document.getElementById('loader').style.display = 'none';
+	document.getElementById('frame2').style.display = 'none';
 
+	//show message
+	let error = document.getElementById('error').style.display = 'block';
+
+	//clear error
+	setTimeout(clearError, 2600);
+
+}
+
+function clearError(){
+	error.remove();
 }
