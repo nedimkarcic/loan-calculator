@@ -14,25 +14,24 @@ body {
 	padding-bottom: 15px;
 }
 
-.btn {
-	background-color: #02aef0;
-	width: 80%;
-	border: none;
-}
-
 #btn-center{
 	display: block;
 	margin: 0 auto;
+	background-color: #02aef0;
+	width: 80%;
+	border: none;
 }
 
 #btn-center:hover {
 	background-color: #0071BA;
 }
 
+
 #error{
 	width: 80%;
 	display: block;
 	margin: 0 auto;
+	margin-top: 5px;
 }
 
 #frame2 {
@@ -52,14 +51,6 @@ body {
 
 * {box-sizing: border-box;}
 
-/*.input {
-	margin: 0px 50px 20px 50px;
-	width: 400px;
-	height: 30px;
-	border-radius: 5px;
-	border: 1.5px solid grey;
-	outline: none;
-}*/
 
 .input {
   width: 100%;
@@ -92,8 +83,6 @@ body {
   outline: none;
   height: 35px;
   border: 1px solid grey;
-/*  border-top-right-radius: 8px;
-  border-bottom-right-radius: 8px;*/
   border-radius: 8px;
   background-color: #02aef0;
   color: white;

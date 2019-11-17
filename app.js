@@ -57,6 +57,8 @@ document.getElementById('loader').style.display = 'none';
 
 };
 
+let error = document.getElementById('error');
+
 function showError(){
 	console.log('error');
 	//hide result and loader
@@ -64,7 +66,7 @@ function showError(){
 	document.getElementById('frame2').style.display = 'none';
 
 	//show message
-	let error = document.getElementById('error').style.display = 'block';
+	error.style.display = 'block';
 
 	//clear error
 	setTimeout(clearError, 2600);
